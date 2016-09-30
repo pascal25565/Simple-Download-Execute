@@ -34,6 +34,7 @@ public class DandE
             fout.close();
         } catch (Exception e)
         {
+            System.out.println(e);
         }
         try
         {
